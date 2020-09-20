@@ -5,3 +5,69 @@ th {
 td {
     padding: 5px 5px 5px 5px;
 }
+
+img {
+    border-radius: 25px;
+}
+
+#hline {
+    border-bottom: 2px solid #EB5757;
+}
+
+.btn {
+    background-color: #EB5757;
+    color: white;
+}
+
+h1 {
+    color: #EB5757;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Source Serif Pro";
+}
+
+footer {
+    background-color: #d1ecf1;
+    color:#226570;
+}
+
+#major-content {
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 15px;
+    background-color: #F2F2F2;
+    margin-left: 100px;
+}
+
+#heading {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#theme {
+    text-align: center;
+}
+
+.balance{
+    margin-left: 20px;
+}
+
+#contact {
+    margin-left: 80px;
+    margin-top: 12px;
+
+}
+
+#info {
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+table {
+    margin-top: 15px;
+}
+
+#sec-button {
+    margin-left:30px;
+}
+
