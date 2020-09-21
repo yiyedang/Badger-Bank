@@ -6,7 +6,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 			<!-- Bootstrap CSS -->
     		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-\			<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 			<meta name="description" content="Badger Bank">
 			<meta name="author" content="Cole Nelson">
 			<title>JavaScript Beta: Badger Bank</title>
@@ -25,7 +25,7 @@
 					</div>
 					<div class="col-md-1">
 					<form>
-						<button type="submit" class="btn btn-lg" formaction='javascript:logout();' style="margin-bottom: 10px">Logout</button>
+						<button type="submit" class="btn btn-lg" formaction='javascript:logout();' style="margin-bottom: 10px">Log out</button>
 					</form>
 				</div>
 			</div>
@@ -36,10 +36,16 @@
 					<div class="content">
 						<h2>Your Account</h2>
 						<br>
-						<p class="title">Name: Bucky Badger</p>
-						<p class="title">Email: bucky.badger@example.com</p>
-						<p class="title">Phone Number: 555.555.1234</p>
-						<p class="title" style="display: inline">Enrolled in paperless statements: </p><p id="paperlessEnrollment" style="display: inline">false</p>
+						<p class="title" style="display: inline">Name: </p><p style="display: inline">Bucky Badger</p>
+						<br>
+						<br>
+						<p class="title" style="display: inline">Email: </p><p style="display: inline">bucky.badger@example.com</p>
+						<br>
+						<br>
+						<p class="title" style="display: inline">Phone Number: </p><p style="display: inline">555.555.1234</p>
+						<br>
+						<br>
+						<p class="title" style="display: inline">Enrolled in paperless statements: </p><p style="display: inline" id="paperlessEnrollment" style="display: inline">false</p>
 
 						<br>
 						<br>
@@ -82,162 +88,168 @@
 				<div class="col-md-6 content">
 					<h2>Your Checkings and Savings Accounts</h2>
 					<br>
-					<h4 class="d-inline">Checking Account xxx126</h4>
-					<p class="balance" style="display: inline">Balance: </p><p style="display: inline">472.61</p>
-					<p class="balance" style="display: inline">Interest Rate: </p><p style="display: inline">0.00%</p>
-					<table class="table-bordered" style="margin-bottom: 10px">
-						<thead>
-							<tr>
-								<th>Date</th>
-								<th>Description</th>
-								<th>Amount</th>
-								<th>Balance</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>09/13/2020</td>
-								<td>CHECK 192</td>
-								<td>-30.82</td>
-								<td>472.61</td>
-							</tr>
-							<tr>
-								<td>09/02/2020</td>
-								<td>MNTHLY DPST UW PAYROLL</td>
-								<td>321.87</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>08/27/2020</td>
-								<td>CHECK 191</td>
-								<td>-750.00</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>08/14/2020</td>
-								<td>CHECK 188</td>
-								<td>-10.00</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>08/02/2020</td>
-								<td>MNTHLY DPST UW PAYROLL</td>
-								<td>637.91</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>07/18/2020</td>
-								<td>VENMO</td>
-								<td>-25.00</td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="sub-block">
+						<h4 class="d-inline">Checking Account xxx126</h4>
+						<p class="title" style="display: inline">Balance: </p><p class="info" style="display: inline">472.61</p>
+						<p class="title" style="display: inline">Interest Rate: </p><p class="info" style="display: inline">0.00%</p>
+						<table class="table-bordered" style="margin-bottom: 10px">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Description</th>
+									<th>Amount</th>
+									<th>Balance</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>09/13/2020</td>
+									<td>CHECK 192</td>
+									<td>-30.82</td>
+									<td>472.61</td>
+								</tr>
+								<tr>
+									<td>09/02/2020</td>
+									<td>MNTHLY DPST UW PAYROLL</td>
+									<td>321.87</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>08/27/2020</td>
+									<td>CHECK 191</td>
+									<td>-750.00</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>08/14/2020</td>
+									<td>CHECK 188</td>
+									<td>-10.00</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>08/02/2020</td>
+									<td>MNTHLY DPST UW PAYROLL</td>
+									<td>637.91</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>07/18/2020</td>
+									<td>VENMO</td>
+									<td>-25.00</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 					<br>
-					<h4 class="d-inline">Savings Account xxx271</h4>
-					<p class="balance" style="display: inline">Balance: </p><p style="display: inline">248.34</p>
-					<p class="balance" style="display: inline">Interest Rate: </p><p style="display: inline">0.06%</p>
-					<table class="table-bordered" style="margin-bottom: 10px">
-						<thead>
-							<tr>
-								<th>Date</th>
-								<th>Description</th>
-								<th>Amount</th>
-								<th>Balance</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>07/21/2020</td>
-								<td>TRANSFER FROM EXT. ACCT</td>
-								<td>67.23</td>
-								<td>248.34</td>
-							</tr>
-							<tr>
-								<td>07/01/2020</td>
-								<td>TRANSFER FROM EXT. ACCT</td>
-								<td>52.68</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>04/06/2020</td>
-								<td>TRANSFER TO EXT. ACCT.</td>
-								<td>-127.63</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>03/11/2020</td>
-								<td>TRANSFER FROM EXT. ACCT</td>
-								<td>100.00</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>02/14/2020</td>
-								<td>TRANSFER TO EXT. ACCT.</td>
-								<td>50.00</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>01/01/2020</td>
-								<td>INTEREST PAID</td>
-								<td>0.06</td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="sub-block">
+						<h4 class="d-inline">Savings Account xxx271</h4>
+						<p class="title" style="display: inline">Balance: </p><p class="info" style="display: inline">248.34</p>
+						<p class="title" style="display: inline">Interest Rate: </p><p class="info" style="display: inline">0.06%</p>
+						<table class="table-bordered" style="margin-bottom: 10px">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Description</th>
+									<th>Amount</th>
+									<th>Balance</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>07/21/2020</td>
+									<td>TRANSFER FROM EXT. ACCT</td>
+									<td>67.23</td>
+									<td>248.34</td>
+								</tr>
+								<tr>
+									<td>07/01/2020</td>
+									<td>TRANSFER FROM EXT. ACCT</td>
+									<td>52.68</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>04/06/2020</td>
+									<td>TRANSFER TO EXT. ACCT.</td>
+									<td>-127.63</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>03/11/2020</td>
+									<td>TRANSFER FROM EXT. ACCT</td>
+									<td>100.00</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>02/14/2020</td>
+									<td>TRANSFER TO EXT. ACCT.</td>
+									<td>50.00</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>01/01/2020</td>
+									<td>INTEREST PAID</td>
+									<td>0.06</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 					<br>
-					<h4 class="d-inline">Savings Account xxx918</h4>
-					<p class="balance" style="display: inline">Balance: </p><p style="display: inline">5027.03</p>
-					<p class="balance" style="display: inline">Interest Rate: </p><p style="display: inline">0.06%</p>
-					<table class="table-bordered" style="margin-bottom: 10px">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Description</th>
-								<th>Amount</th>
-								<th>Balance</th>
-							</tr>
-						</thead>
-						<tbody>
+					<div class="sub-block">
+						<h4 class="d-inline">Savings Account xxx918</h4>
+						<p class="title" style="display: inline">Balance: </p><p class="info" style="display: inline">5027.03</p>
+						<p class="title" style="display: inline">Interest Rate: </p><p class="info" style="display: inline">0.06%</p>
+						<table class="table-bordered" style="margin-bottom: 10px">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Amount</th>
+									<th>Balance</th>
+								</tr>
+							</thead>
+							<tbody>
 
-							<tr>
-								<td>01/01/2020</td>
-								<td>INTEREST PAID</td>
-								<td>3.01</td>
-								<td>5027.03</td>
-							</tr>
-							<tr>
-								<td>09/01/2020</td>
-								<td>TRANSFER TO EXT. ACCT.</td>
-								<td>-5000.00</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>01/01/2019</td>
-								<td>INTEREST PAID</td>
-								<td>6.01</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>01/01/2018</td>
-								<td>INTEREST PAID</td>
-								<td>6.01</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>01/01/2016</td>
-								<td>INTEREST PAID</td>
-								<td>6.00</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>01/01/2015</td>
-								<td>INTEREST PAID</td>
-								<td>6.00</td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
+								<tr>
+									<td>01/01/2020</td>
+									<td>INTEREST PAID</td>
+									<td>3.01</td>
+									<td>5027.03</td>
+								</tr>
+								<tr>
+									<td>09/01/2020</td>
+									<td>TRANSFER TO EXT. ACCT.</td>
+									<td>-5000.00</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>01/01/2019</td>
+									<td>INTEREST PAID</td>
+									<td>6.01</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>01/01/2018</td>
+									<td>INTEREST PAID</td>
+									<td>6.01</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>01/01/2016</td>
+									<td>INTEREST PAID</td>
+									<td>6.00</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>01/01/2015</td>
+									<td>INTEREST PAID</td>
+									<td>6.00</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 					<br>
 					<form class="d-inline" method="get" action ="./account_info/account_statement.pdf">
 						<button type="submit" class="btn" style="margin-bottom: 10px">Download Account Statements</button>
@@ -257,10 +269,10 @@
 						<h3>Contact Us</h3>
 						<p>Have a question?</p>
 					</div>
-					<div class="col-md-4 info">
+					<div class="col-md-4 bottom">
 						<p>Contact us at 555.555.4321<br>or by emailing badgerbank@example.com</p>
 					</div>
-					<div class="col-md-1 info">
+					<div class="col-md-1 bottom">
 						<p><a href="#">Back to top</a></p>
 					</div>
 					</div>
@@ -270,7 +282,5 @@
 	</main>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="script.js"></script>
-	<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	</body>
 </html>

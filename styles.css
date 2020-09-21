@@ -6,6 +6,10 @@ td {
     padding: 5px 5px 5px 5px;
 }
 
+table {
+    margin-top: 15px;
+}
+
 img {
     border-radius: 25px;
     margin-left: 40px;
@@ -32,6 +36,11 @@ h2 {
     font-family: "Source Serif Pro";
 }
 
+h4{
+    color: #226570;
+    margin-right: 30px;
+}
+
 footer {
     background-color: #d1ecf1;
     color:#226570;
@@ -53,8 +62,18 @@ footer {
     text-align: center;
 }
 
-.balance{
-    margin-left: 20px;
+.sub-block {
+    background-color: #E5E5E5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.info {
+    margin-right: 30px;
 }
 
 #contact {
@@ -63,13 +82,9 @@ footer {
 
 }
 
-.info {
+.bottom {
     margin-left: 100px;
     margin-top: 20px;
-}
-
-table {
-    margin-top: 15px;
 }
 
 #sec-button {
