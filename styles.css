@@ -8,6 +8,7 @@ td {
 
 img {
     border-radius: 25px;
+    margin-left: 40px;
 }
 
 #hline {
@@ -22,7 +23,12 @@ img {
 h1 {
     color: #EB5757;
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 700;
+    font-family: "Source Serif Pro";
+}
+
+h2 {
+    font-weight: 700;
     font-family: "Source Serif Pro";
 }
 
@@ -31,10 +37,9 @@ footer {
     color:#226570;
 }
 
-#major-content {
+.content {
     border-radius: 10px;
-    padding-left: 30px;
-    padding-top: 15px;
+    padding: 30px;
     background-color: #F2F2F2;
     margin-left: 100px;
 }
@@ -53,13 +58,13 @@ footer {
 }
 
 #contact {
-    margin-left: 80px;
+    margin-left: 100px;
     margin-top: 12px;
 
 }
 
-#info {
-    margin-left: 80px;
+.info {
+    margin-left: 100px;
     margin-top: 20px;
 }
 

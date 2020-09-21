@@ -6,13 +6,14 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 			<!-- Bootstrap CSS -->
     		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+\			<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 			<meta name="description" content="Badger Bank">
 			<meta name="author" content="Cole Nelson">
 			<title>JavaScript Beta: Badger Bank</title>
 			<link rel="stylesheet" href="styles.css">
 		</head>
 		<body>
-			<!-- <div class="container"> -->
+			<div class="container-fluid">
 			<div class="row" id="heading">
 				<div class="col-md-3">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Taxidea_taxus_%28Point_Reyes%2C_2007%29.jpg" height="200px" width="auto">
@@ -31,50 +32,54 @@
 			<hr id="hline">
 			<br>
 			<div class="row">
-				<div class="col-md-4" id="major-content">
-					<h2>Your Account</h2>
-					<br>
-					<p>Name: Bucky Badger</p>
-					<p>Email: bucky.badger@example.com</p>
-					<p>Phone Number: 555.555.1234</p>
-					<p style="display: inline">Enrolled in paperless statements: </p><p id="paperlessEnrollment" style="display: inline">false</p>
+				<div class="col-md-4">
+					<div class="content">
+						<h2>Your Account</h2>
+						<br>
+						<p class="title">Name: Bucky Badger</p>
+						<p class="title">Email: bucky.badger@example.com</p>
+						<p class="title">Phone Number: 555.555.1234</p>
+						<p class="title" style="display: inline">Enrolled in paperless statements: </p><p id="paperlessEnrollment" style="display: inline">false</p>
 
+						<br>
+						<br>
+						<form>
+							<button type="submit" class="btn" formaction='javascript:togglePaperlessEnrollment();' style="margin-top: 10px">Enroll/Unenroll</button>
+						</form>
+					</div>
 					<br>
 					<br>
-					<form>
-						<button type="submit" class="btn" formaction='javascript:togglePaperlessEnrollment();' style="margin-top: 10px">Enroll/Unenroll</button>
-					</form>
 					<br>
-					<br>
-					<br>
-					<h2>Your Beneficiaries</h2>
-					<table class="table-bordered" style="margin-bottom: 10px">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Email</th>
-							</tr>
-						</thead>
-							<tr>
-								<td>Goldy Golpher</td>
-								<td>goldy.gopher@example.com</td>
-							</tr>
-							<tr>
-								<td>Pioneer Pete</td>
-								<td>pioneer.pete@example.com</td>
-							</tr>
-						<tbody>
+					<div class="content">
+						<h2>Your Beneficiaries</h2>
+						<table class="table-bordered" style="margin-bottom: 10px">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Email</th>
+								</tr>
+							</thead>
+								<tr>
+									<td>Goldy Golpher</td>
+									<td>goldy.gopher@example.com</td>
+								</tr>
+								<tr>
+									<td>Pioneer Pete</td>
+									<td>pioneer.pete@example.com</td>
+								</tr>
+							<tbody>
 
-						</tbody>
-					</table>
-					<br>
-					<form>
-						<button type="submit" class="btn" formaction='javascript:addBeneficiary();' style="margin-bottom: 10px">Add Beneficiary</button>
-					</form>
+							</tbody>
+						</table>
+						<br>
+						<form>
+							<button type="submit" class="btn" formaction='javascript:addBeneficiary();' style="margin-bottom: 10px">Add Beneficiary</button>
+						</form>
+					</div>
 				</div>
 				<br>
 				<br>
-				<div class="col-md-6" id="major-content">
+				<div class="col-md-6 content">
 					<h2>Your Checkings and Savings Accounts</h2>
 					<br>
 					<h4 class="d-inline">Checking Account xxx126</h4>
@@ -252,16 +257,16 @@
 						<h3>Contact Us</h3>
 						<p>Have a question?</p>
 					</div>
-					<div class="col-md-4" id="info">
-					<p>Contact us at 555.555.4321<br>or by emailing badgerbank@example.com</p>
+					<div class="col-md-4 info">
+						<p>Contact us at 555.555.4321<br>or by emailing badgerbank@example.com</p>
 					</div>
-					<div class="col-md-1" id="info">
+					<div class="col-md-1 info">
 						<p><a href="#">Back to top</a></p>
 					</div>
 					</div>
 				</div>
 			</footer>
-	<!-- </div> -->
+	</div>
 	</main>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="script.js"></script>
