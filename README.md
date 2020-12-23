@@ -2,6 +2,8 @@
 
 This is an application simulating an online bank account.
 
+![Prototype](https://github.com/yiyedang/Badger-Bank/blob/master/Screen%20Shot%202020-09-21%20at%202.19.31%20PM.png)
+
 ### askQuestion (0.1 Points)
 
 Complete this function by making the question field and submit button beneath the welcome message visible.
